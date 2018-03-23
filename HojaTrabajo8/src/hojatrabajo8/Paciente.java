@@ -7,7 +7,7 @@ package hojatrabajo8;
  * @version 1.0
  *
  */
-public class Paciente {
+public class Paciente implements Comparable<Paciente>  {
 	
 	private String nombre;
 	private String enfermedad;
@@ -58,7 +58,17 @@ public class Paciente {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	
+        
+        public int compareTo(Paciente p){
+            if(this.tipo.compareTo(p.getTipo())<0){
+                return -1;
+            }else
+            if(this.tipo.compareTo(p.getTipo())>0){
+                return 1;
+            }else{
+                return 0;
+            }
+        }
 	
 
 }

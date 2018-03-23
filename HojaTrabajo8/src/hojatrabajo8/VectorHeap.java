@@ -126,7 +126,7 @@ public class VectorHeap <E extends Comparable<E>> implements PriorityQueue<E>{
 
     @Override
     public boolean isEmpty() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return data.isEmpty();
     }
 
     @Override

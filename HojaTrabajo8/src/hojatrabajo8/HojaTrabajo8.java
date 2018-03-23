@@ -24,7 +24,7 @@ public class HojaTrabajo8 {
         FileReader fr;
 	BufferedReader br;
         Paciente paciente;
-        VectorHeap vector = new VectorHeap();
+        VectorHeap<Paciente> p = new VectorHeap<>();
         try{
            f = new File("./pacientes.txt");
            fr = new FileReader(f);
@@ -42,13 +42,17 @@ public class HojaTrabajo8 {
                enfermedad = temporal.substring(0,pos);
                tipo = temporal.substring(pos+1,temporal.length());
                paciente = new Paciente(nombre,enfermedad,tipo);
+               p.add(paciente);
            }
            br.close();
            fr.close();
         }catch(Exception e){
              System.err.println("Se produjo un error");
         }
-        
+        System.out.println("===Registro de pacientes===");
+        while(!p.isEmpty()){
+            System.out.println(p.remove().toString());
+        }
         
     }
     
