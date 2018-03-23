@@ -10,8 +10,9 @@ import java.util.Vector;
 /**
  *
  * @author alber
+ * @param <E>
  */
-public class VectorHeap <E extends Comparable<E>> implements PriorityQueue{
+public class VectorHeap <E extends Comparable<E>> implements PriorityQueue<E>{
 
     protected Vector<E> data; // the data, kept in heap order
 
@@ -116,13 +117,11 @@ public class VectorHeap <E extends Comparable<E>> implements PriorityQueue{
 	return minVal;
     }
     
-    public void add_(E value){
+    
+    @Override
+    public void add(E value){
         data.add(value);
 	percolateUp(data.size()-1);
-    }
-    
-    public void add(Comparable value){
-        
     }
 
     @Override
