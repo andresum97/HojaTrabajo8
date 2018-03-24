@@ -105,7 +105,7 @@ public class VectorHeap <E extends Comparable<E>> implements PriorityQueue<E>{
     
     @Override
     public E getFirst() {
-        return data.get(0);
+         return data.get(0);
     }
 
     @Override
@@ -137,6 +137,19 @@ public class VectorHeap <E extends Comparable<E>> implements PriorityQueue<E>{
     @Override
     public void clear() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    /**
+    public String toString(){
+       String info="";
+       for(int i=0;i<data.size();i++){
+           info = info+data.get(i);
+       }
+       return info;
+    }*/
+    public void print(){
+       for(int i=0;i<data.size();i++){
+           System.out.println(data.get(i));
+       } 
     }
     
 }

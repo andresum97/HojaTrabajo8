@@ -50,9 +50,11 @@ public class HojaTrabajo8 {
              System.err.println("Se produjo un error");
         }
         System.out.println("===Registro de pacientes===");
+        /**
         while(!p.isEmpty()){
-            System.out.println(p.remove().toString());
-        }
+           /// System.out.println(p.remove().toString());
+        }*/
+        p.print();
         
     }
     

@@ -60,14 +60,18 @@ public class Paciente implements Comparable<Paciente>  {
 	}
         
         public int compareTo(Paciente p){
-            if(this.tipo.compareTo(p.getTipo())<0){
+            if(this.tipo.compareTo(p.tipo)<0){
                 return -1;
             }else
-            if(this.tipo.compareTo(p.getTipo())>0){
+            if(this.tipo.compareTo(p.tipo)>0){
                 return 1;
             }else{
                 return 0;
             }
+        }
+        
+        public String toString(){
+            return "Nombre del paciente: "+nombre+", descripción del sintoma: "+enfermedad+", código: "+tipo;
         }
 	
 
