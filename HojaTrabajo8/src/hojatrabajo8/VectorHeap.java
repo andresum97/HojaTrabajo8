@@ -12,7 +12,7 @@ import java.util.Vector;
  * @author alber
  * @param <E>
  */
-public class VectorHeap <E extends Comparable<E>> implements PriorityQueue<E>{
+public class VectorHeap <E extends Comparable<E>> implements PriorityQueue1<E>{
 
     protected Vector<E> data; // the data, kept in heap order
 

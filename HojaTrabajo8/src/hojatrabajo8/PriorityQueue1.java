@@ -9,7 +9,7 @@ package hojatrabajo8;
  *
  * @author alber
  */
-public interface PriorityQueue<E extends Comparable<E>> {
+public interface PriorityQueue1<E extends Comparable<E>> {
     public E getFirst();
 	// pre: !isEmpty()
 	// post: returns the minimum value in priority queue
