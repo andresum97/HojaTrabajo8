@@ -58,7 +58,11 @@ public class Paciente implements Comparable<Paciente>  {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-        
+        /**
+         * Método compareTo para comparar dos elementos de la misma clase
+         * @param p
+         * @return entero que indica, si es mayor, menor o igual
+         */
         public int compareTo(Paciente p){
             if(this.tipo.compareTo(p.tipo)<0){
                 return -1;
@@ -69,9 +73,12 @@ public class Paciente implements Comparable<Paciente>  {
                 return 0;
             }
         }
-        
+        /**
+         * Método toString
+         * @return texto
+         */
         public String toString(){
-            return "Nombre del paciente: "+nombre+", descripción del sintoma: "+enfermedad+", código: "+tipo;
+            return "Nombre del paciente: "+nombre+", descripción del sintoma: "+enfermedad+", Tipo: "+tipo;
         }
 	
 
