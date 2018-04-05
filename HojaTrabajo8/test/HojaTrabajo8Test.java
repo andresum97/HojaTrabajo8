@@ -1,26 +1,49 @@
-package hojatrabajo8;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
+import hojatrabajo8.Paciente;
+import hojatrabajo8.VectorHeap;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import static org.junit.Assert.*;
 
-import org.junit.Before;
-import org.junit.Test;
-
 /**
- * Clase que se utiliza para probar los métodos más importantes de VectorHeap
- * 
- * @author Javier Anleu - 17149
- * @author Andres Urizar - 17632
- * @since March 23, 2018
- * @version 1.0
  *
+ * @author alber
  */
-public class Tests {
+public class HojaTrabajo8Test {
+    
+    public HojaTrabajo8Test() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
+    }
 
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	/**
+    // TODO add test methods here.
+    // The methods must be annotated with annotation @Test. For example:
+    //
+    // @Test
+    // public void hello() {}
+    /**
 	 * Test para probar el funcionamiento del método para agregar pacientes
 	 */
 	@Test
